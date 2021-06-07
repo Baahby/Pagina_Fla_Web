@@ -1,0 +1,236 @@
+@media (max-width:1125px){
+    #noticia{
+        grid-template-columns: 500px 500px;
+    }
+
+    #especial{
+        grid-template-columns: 400px;
+        grid-template-rows: 690px 290px;
+    }
+}
+
+@media (max-width:1060px){
+    #noticia{
+        grid-template-columns: 600px;
+        grid-template-areas:"grande"
+                            "grande";
+    }
+    
+    .cards:nth-child(2){
+        display: none;
+    }
+    
+    .cards:nth-child(3){
+        display: none;
+    }
+    
+    #especial{
+        grid-template-columns: 350px;
+        grid-template-rows:690px 300px;
+    }
+}
+    
+@media (max-width:1000px){
+    #especial{
+        grid-template-columns: 290px;
+        grid-template-rows:780px 320px;
+    }
+}
+    
+    
+@media (max-width:955px){
+    body{
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 130px 700px 1000px 1fr 104px;
+        grid-template-areas:"cabecalho cabecalho cabecalho"
+                            "cards cards cards"
+                            "especial especial especial"
+                            "principal principal principal"
+                            "rodape rodape rodape";
+    }
+    
+    aside{
+        grid-area: especial;
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    
+    #materia{
+        grid-area: principal;
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    
+    #especial{
+        grid-template-columns: 680px;
+        grid-template-rows: 631px 290px;
+        gap: 12px;
+    }
+    #noticia{
+        grid-template-columns: 680px;
+        grid-template-rows: 300px 300px;
+    }
+
+    #esq p{
+        font-size: 10.88px;
+    }
+
+    #dir p{
+        font-size: 14px;
+    }
+
+    #dir a{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:700px){
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #noticia{
+        grid-template-columns: 650px;
+        grid-template-rows: 280px 280px;
+    }
+    
+    aside{
+        margin: 0px;
+        padding: 15px;
+    }
+
+    #especial{
+        grid-template-columns: 550px;
+    }
+}
+
+@media(max-width:650px){
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #noticia{
+        grid-template-columns: 600px;
+        grid-template-rows: 280px 280px;
+    }
+}
+    
+@media(max-width:600px){
+    #noticia{
+        grid-template-columns: 550px;
+    }
+    
+    #especial{
+        grid-template-columns: 500px;
+    }
+}
+    
+@media (max-width:550px){
+    body{
+        grid-template-columns: 10px 520px 10px;
+        grid-template-rows: 130px 1000px 1fr 104px;
+        grid-template-areas:"cabecalho cabecalho cabecalho"
+                            "especial especial especial"
+                            "principal principal principal"
+                            "rodape rodape rodape";
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+
+    main{
+        display: none;
+    }
+
+    .cards:nth-child(1){
+        display: none;
+    }
+    
+    aside{
+        grid-area: especial;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    
+    #materia{
+        grid-area: principal;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        width: 100%;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        background-color: white;
+    }
+        
+    .info img{
+        width: 520;
+        height: 295px;
+        padding-bottom: 0px;
+    }
+        
+    .info a{
+        font-size: 20px;
+        padding: 15px;
+    }
+        
+    .info p{
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        
+    .info #dia{
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    /*.info{
+        display: grid;
+        grid-template-columns: 490px;
+        grid-template-rows: repeat(2, 80px) 295px 21px;
+        gap: 6px;
+        background-color: white;
+    }
+        
+    #info-img{
+        padding-bottom: 0px;
+        height: 295px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+        
+    #info-title{
+        font-size: 20px;
+        padding: 15px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+        
+    #info-sub{
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+        
+    .info #dia{
+        padding-left: 15px;
+        text-align: left;
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }*/
+}
